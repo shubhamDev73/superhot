@@ -2,9 +2,13 @@
 
 public class Bullet : MonoBehaviour {
 
+	[@HideInInspector]
 	public float range = 100;
+	[@HideInInspector]
 	public float damage = 10;
+	[@HideInInspector]
 	public GameObject gun;
+
 	private Vector3 initPos;
 
 	void Start () {
@@ -19,10 +23,9 @@ public class Bullet : MonoBehaviour {
 	void OnCollisionEnter (Collision col) {
 		if(col.gameObject != gun){
 			Gun script = col.transform.GetComponent<Gun>();
-			if(script){
+			if(script)
 				script.Hit(damage);
-				Destroy(gameObject);
-			}
+			Destroy(gameObject);
 		}
 	}
 }

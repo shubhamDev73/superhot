@@ -3,6 +3,7 @@
 public class Enemy : MonoBehaviour {
 
 	public static Transform player;
+	
 	private int timer;
 
 	void Start () {

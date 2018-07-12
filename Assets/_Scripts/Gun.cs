@@ -2,19 +2,24 @@
 
 public class Gun : MonoBehaviour {
 
-	public float range = 100;
+	public float range = 10;
 	public float damage = 10;
 	public float health = 50;
 	public GameObject bulletPrefab;
 	public Transform bulletSpawn;
 
 	public void Fire () {
-		GameObject bullet = Instantiate(bulletPrefab, bulletSpawn);
+		Vector3 direction;
 		if(gameObject.name == "Player"){
-			bullet.GetComponent<Rigidbody>().AddForce(Camera.main.ScreenPointToRay(Input.mousePosition).direction * 100, ForceMode.VelocityChange);
+			// firing where mouse is
+			direction = Camera.main.ScreenPointToRay(Input.mousePosition).direction.normalized;
 		}else{
-			bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 100, ForceMode.VelocityChange);
+			direction = transform.forward.normalized;
 		}
+		GameObject bullet = Instantiate(bulletPrefab, bulletSpawn);
+		bullet.GetComponent<Rigidbody>().AddForce(direction * 10, ForceMode.VelocityChange);
+		bullet.transform.Rotate(direction);
+		// initializing bullet parameters
 		Bullet script = bullet.GetComponent<Bullet>();
 		script.gun = gameObject;
 		script.range = range;
