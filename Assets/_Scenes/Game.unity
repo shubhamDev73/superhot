@@ -155,6 +155,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ab30b270f2e35e478879258c12ead46, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &854157198
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4415968555777452, guid: abeaba2f1af773d4989653beb8b480aa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415968555777452, guid: abeaba2f1af773d4989653beb8b480aa, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415968555777452, guid: abeaba2f1af773d4989653beb8b480aa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415968555777452, guid: abeaba2f1af773d4989653beb8b480aa, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415968555777452, guid: abeaba2f1af773d4989653beb8b480aa, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415968555777452, guid: abeaba2f1af773d4989653beb8b480aa, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415968555777452, guid: abeaba2f1af773d4989653beb8b480aa, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415968555777452, guid: abeaba2f1af773d4989653beb8b480aa, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: abeaba2f1af773d4989653beb8b480aa, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1553524859
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +344,7 @@ Transform:
   m_GameObject: {fileID: 1606992105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
