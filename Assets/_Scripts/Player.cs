@@ -2,7 +2,7 @@
 
 public class Player : MonoBehaviour {
 
-	public float speed = 10;
+	public float speed = 5;
 	public float rotLimit = 20;
 
 	void Update () {
