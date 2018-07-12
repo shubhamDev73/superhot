@@ -22,4 +22,5 @@ public class Enemy : MonoBehaviour {
 			timer = 0;
 		}
 	}
+
 }

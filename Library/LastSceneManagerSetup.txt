@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Game.unity
+- path: C:/Users/Shubham/Desktop/Me/Games/Unity/light game/Assets/game.unity
   isLoaded: 1
   isActive: 1
