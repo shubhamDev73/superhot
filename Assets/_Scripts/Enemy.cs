@@ -15,13 +15,9 @@ public class Enemy : MonoBehaviour {
 		transform.LookAt(player);
 		transform.Translate(0, 0, 0.1f, Space.Self);
 		timer++;
-		if(timer > 30){
-			Fire();
+		if(timer > Random.Range(50, 100)){
+			GetComponent<Gun>().Fire();
 			timer = 0;
 		}
-	}
-
-	void Fire () {
-		//fire at player
 	}
 }
